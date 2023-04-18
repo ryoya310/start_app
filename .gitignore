@@ -1,9 +1,11 @@
 # all
 *.bak
-_*
+
+.DS_Store
+Thumbs.db
+
 /docker/mysql/store
-/htdocs/*
-!/htdocs/.gitkeep
+
 .env*.local
 
 # python

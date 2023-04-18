@@ -1,0 +1,5 @@
+# ベーシック認証
+AuthType Basic
+AuthName "Basic authentication."
+AuthUserFile /home/アカウント/www/manual/.htpasswd
+require valid-user

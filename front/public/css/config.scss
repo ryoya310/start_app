@@ -1,0 +1,56 @@
+@use "sass:map";
+
+// 汎用的CSS
+$maxWidth: 1920px;
+
+// フォントカラー
+$fontColor: rgb(39, 39, 39);
+
+// 変更カラー
+$updateColor: #fde;
+
+// ホバーカラー
+$hoverColor: #F15B5B;
+
+$redColor: rgb(196, 80, 78);
+$blueColor: rgb(80, 78, 196);
+$greenColor: rgb(80, 196, 78);
+$yellowColor: rgb(196, 196, 78);
+
+// レイアウト
+$headerHeight: 60px;
+$mainHeight: calc(100vh - 50px - 0px);
+$footerHeight: 0px;
+$sideSize: 50px;
+$borderColor: #aaa;
+
+// ブレンド1
+$blend1_01: #193646;
+$blend1_02: #627078;
+$blend1_03: #aaaaaa;
+$blend1_04: #eeeeee;
+
+// ブレンド2
+$blend2_01: #009aed;
+$blend2_02: #40B3F2;
+$blend2_03: #80CDF6;
+$blend2_04: #BFE6FB;
+
+// ロゴ
+$logoWidth: 40px;
+$logoHeight: 40px;
+
+// レスポンシブ対応
+$breakpoints: (
+	"mini": "screen and (max-width: 499px)",
+	"sp": "screen and (max-width: 789px)",
+	"operator": "screen and (max-width: 1400px)",
+	"pc": "screen and (min-width: 790px)",
+	"large": "screen and (min-width: 1080px)",
+	"big": "screen and (min-width: 1420px)"
+) !default;
+@mixin mq($breakpoint) {
+	@media #{map.get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
