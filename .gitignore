@@ -1,0 +1,11 @@
+# all
+*.bak
+_*
+/docker/mysql/store
+/htdocs/*
+!/htdocs/.gitkeep
+.env*.local
+
+# python
+__pycache__
+migrations
