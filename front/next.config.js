@@ -5,8 +5,8 @@ const nextConfig = {
     API_ROOT: process.env.API_ROOT,
   },
   // サブディレクトリにアップする場合
-  // basePath: 'preview',
-  // assetPrefix: 'preview',
+  // basePath: '/preview',
+  // assetPrefix: '/preview',
   reactStrictMode: false,
   swcMinify: true,
   trailingSlash: true,
@@ -28,6 +28,6 @@ const nextConfig = {
       }
     })
     return config
-  },
+  }
 }
 module.exports = nextConfig
