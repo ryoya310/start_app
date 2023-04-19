@@ -1,5 +1,6 @@
 # 変更ファイル 変更フォルダ リスト
 
+0-1 .git 削除
 1-1 .env
 2-1 .batch/.start.bat
 2-2 .batch/.start.sh
